@@ -1,0 +1,7 @@
+[Unit]
+Description=Server health check
+
+[Service]
+Type=oneshot
+ExecStart=/opt/server-monitor/health_check.sh
+SuccessExitStatus=1 2
